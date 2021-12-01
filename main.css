@@ -24,6 +24,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    opacity: 0.8;
 }
 
 .container-item {
