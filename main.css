@@ -5,11 +5,14 @@
 }
 body {
     min-height: 100vh;
-    background: #eee;
     display: flex;
     font-family: sans-serif;
     align-items: center;
     justify-content: center;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .container {
     height: 50%;

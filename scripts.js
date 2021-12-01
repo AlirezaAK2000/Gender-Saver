@@ -8,7 +8,6 @@ function submit_handler(e) {
     var log = document.querySelector("#gender-status");
     log.innerText = 'hello';
     e.preventDefault();
-
 }
 
 
