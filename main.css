@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* set background image, font family and display */
 body {
     min-height: 100vh;
     display: flex;
@@ -14,6 +16,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
+/* main component in the center of the page. It uses grid display with two columns 
+    with a little bit opacity
+*/
 .container {
     height: 50%;
     width: 50%;
@@ -27,6 +33,7 @@ body {
     opacity: 0.8;
 }
 
+/* using flex for centering contetnt of each column.*/
 .container-item {
     height: 100%;
     width: 100%;
@@ -35,21 +42,25 @@ body {
     justify-content: center;
 }
 
+/* inner component of each column. We want to represnt the components of each column horizontally */
 .inner-conianer-item {
     display: block;
     margin: 5px;
 }
 
+/* adding styles to headers */
 h1 {
     text-align: center;
     margin-bottom: 24px;
     color: #222;
 }
 
+/* setting some margin for paragraphs */
 p{
     margin: 5px;
 }
 
+/* modify text input style */
 .form-control {
     width: 100%;
     height: 40px;
@@ -59,6 +70,8 @@ p{
     margin: 10px 0 18px 0;
     padding: 0 10px;
 }
+
+/* button styles */
 .btn {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -72,6 +85,7 @@ p{
     color: white;
     border-radius: 4px;
 }
+/* adding a behaviour to button with some opacity */
 .container-item form .btn:hover {
     opacity: 0.7;
 }
