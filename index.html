@@ -8,41 +8,44 @@
         <title>Gender Recognizer</title>
     </head>
     <body>
-        <div class="container">
-            <div class="container-item">
-                <form id="main-form">
-                    <h1>Mr. or Ms. ?</h1>
-                    <div class="form-group">
-                        <label for="name">Name: </label>
-                        <input type="text" class="form-control" id="name" name="name" maxlength="255" required />
-                    </div>
+            <div class="container">
+                <div class="container-item">
+                    <form id="main-form">
+                        <p style="color: green;margin: auto;" id="status"></p>
+    
+                        <h1>Mr. or Ms. ?</h1>
+                        <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" class="form-control" id="name" name="name" maxlength="255" required />
+                        </div>
 
-                    <div class="radio-style">
-                        <label for="genderChoice1"><input type="radio" id="genderChoice1" name="gender" value="male"/> Male</label>
-                        <label for="genderChoice2"><input type="radio" id="genderChoice2" name="gender" value="female" > Female</label>
-                    </div>
+                        <div class="radio-style">
+                            <label for="genderChoice1"><input type="radio" id="genderChoice1" name="gender" value="male"/> Male</label>
+                            <label for="genderChoice2"><input type="radio" id="genderChoice2" name="gender" value="female" > Female</label>
+                        </div>
 
-                    <button type="submit" class="btn">Submit</button>
-                    <button type="submit" class="btn" style="margin-top: 5px;">Save</button>
-                </form>
-            </div>
+                        <button type="submit" class="btn" id="submit-button">Submit</button>
+                        <button type="submit" class="btn" style="margin-top: 5px;" id="save-button">Save</button>
+                        <p id="alert" style="display: flex;justify-content: center;color: red;"></p>
+                    </form>
+                </div>
 
-            <div class="container-item">
-                <div class="inner-container-item">
-                    <div class="inner-conianer-item">
-                        <h1>Prediction</h1>
-                        <p id="gender-status" style="display: flex;justify-content: center;"></p>
-                        <p id="gender-percentage" style="display: flex;justify-content: center;"></p>
-                    </div>
+                <div class="container-item">
+                    <div class="inner-container-item">
+                        <div class="inner-conianer-item">
+                            <h1>Prediction</h1>
+                            <p id="gender-status" style="display: flex;justify-content: center;"></p>
+                            <p id="gender-percentage" style="display: flex;justify-content: center;"></p>
+                        </div>
 
 
-                    <div class="inner-conianer-item" style="border-style: dotted;border-width: 2px;padding: 5px;">
-                        <h1>Saved Answer</h1>
-                        <p id="gender-status-saved" style="display: flex;justify-content: center;"></p>
-                    <button type="submit" class="btn">Clear</button>
+                        <div class="inner-conianer-item" style="border-style: dotted;border-width: 2px;padding: 5px;">
+                            <h1>Saved Answer</h1>
+                            <p id="gender-status-saved" style="display: flex;justify-content: center;"></p>
+                        <button type="submit" class="btn" id="clear-button">Clear</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             
 
